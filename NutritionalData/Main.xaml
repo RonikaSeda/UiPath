@@ -1,0 +1,417 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1114,7102" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.Activities.Extensions.Statements</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>DataTableExtensions.Aggregation</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities.Extensions</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>DataTableExtensions.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="894,7037" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Condition" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ElementsDataTable" />
+      <Variable x:TypeArguments="x:String" Name="AddNextFood" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="852,5416" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence sap:VirtualizedContainerService.HintSize="816,5251" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="Food" />
+            <Variable x:TypeArguments="scg:ICollection(x:String)" Default="[new List(of string)]" Name="list_Food" />
+            <Variable x:TypeArguments="scg:IDictionary(x:String, x:String)" Default="[new Dictionary(of string, String)]" Name="dict_Food" />
+            <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            <Variable x:TypeArguments="x:String" Name="Element" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog | Food" sap:VirtualizedContainerService.HintSize="774,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="What kind of food?" Title="What kind of food?">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[Food]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome | MyFitnessPal.com" sap:VirtualizedContainerService.HintSize="774,4550" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="50e924de-3f78-4ce5-a2fd-fa002198a81b" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="740,4334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="Portion" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into | User Input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="648,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="50e924de-3f78-4ce5-a2fd-fa002198a81b" Text="[Food + &quot;[k(enter)]&quot;]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.myfitnesspal.com/food/search" DesignTimeRectangle="536, 305, 572, 55" ElementType="InputBox" FriendlyName="'avocado'" FullSelectorArgument="&lt;webctrl tag='INPUT' placeholder='Search for a food, brand, or restaurant' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' placeholder='Search for a food, brand, or restaurant' type='text' class='MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-mnn31' aaname='' /&gt;" Guid="6ca36183-e1d2-48ad-afb7-54871712360d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkAAAAA7CAYAAACT4DUdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVHhe7dzhS1tXGMBh//8/IjQYGmioRZqSYhEKDQtsOro6UhwVZUGpGhBSqjga3517c2MS06nb+inneeClvc3Jze23H+feZC0AADKz9vXr1zDGGGOMWdW5urqKb9++VekzYQcIAFhp4/E4rq+vFyJIAAEAWSgi6Obmpvy7AAIAslDET7EbVBBAAEA2prfBBBAAkA0BBABkRwABANkRQABAdgQQAJAdAQQAZEcAAQDZEUAAQHYEEACQHQEEAGRHAAEA2RFAAEB2BBAAkJ0VDKBh9J7VotUbVscAAIsEEACQHQEEAGRHAAEA2fluAF183IqN9VrUamme1KP5qheDy8lrg7eNqK1vx9HksDKK3Rdp7cu9uC6PL2PQa0ezXp2j3orObycx+aipu2ua0e4N0r/O3HcdU8Wa1vQczXb0/hwsB9D4IvpvNqL+ZLpuM7qfRtWLAEBulgPopBvNFAmtd0cx/DKK0ed+dJopGl5VcXPcjUatEd3jcvXEl93YSO9pf5jkz2mvlYKlGVv90xilc5z2t6KZ4qP1yyxKFtcMY7DTTuedW/PQdRQOt8v3NN/04zStGQ5205pGNFI0zQLoMvZfp2hrbEbvcFh+1lFvs/w/bH26PRMAkJGlABr90Y2tN+/jpDouXH9oR63Wif64ODqJ7tNaNN7NVpSvP2nHXtET13vRTrGzsXMxebFy0m2WO0cHxTmqNc3u/KdE9DspcJ52y89++DquY+9lWv+sFws3u1KgleE0DaAypOqxfTA5nEjvfZXe+3w3Fq8SAMjB454B2u+k8GhF73xyePKuEbXmJFRuY2K6M3O4HfVaM3pn5Ysz8ztH5Zo7u0iPsXAdB7FVRNRPp+VLM0exPbcDNPp1Yy6aZiYxVUUbAJCV5QD6axj9t5vRnD57czuzAJrETHU83o9OCpH271VJ3ImlW+e9aKXzdPbT3/9pzbwHryN9bjpefth58SHoYXGrLQVQ8bELHnMNAMBKWgqgcjen0Y73ny9nDy0vxcLkNlgZGcVr09tfhR+yA1TtKt17HZOdHjtAAMC/tRRAxe5J7fXifsnFThERi7sl5W2wF7uxt11ffDD5hzwDNNnFuf86qmeA7j7H4xkgAOAB398BWt+Inwej8htcw8NutFKsLN0uKnd06lFfn7v9Vfn/3wKrAuWh6/jet8CepjXFZ93eGvMtMABg0fIzQJcH8fZ5PYVGERu1qD/vxPtucbvoTgBVt8EWbn/d+i+/A5TW7Mz9DtAjr2Phd4BSMG19PPA7QADAvZYDCABgxQkgACA7AggAyI4AAgCyI4AAgOwIIAAgOwIIAMiOAAIAsiOAAIDsCCAAIDsCCADIjgACALIjgACA7AggACA7AggAyI4AAgCyI4AAgOwIIAAgOwIIAMiOAAIAsiOAAIDsCCAAICs3NzcCCADIy9XVlQACAPJR7P5cXFzEeDwujwUQALCyivC5vLyMs7Oz8s/iuLA2GAzCGGOMMWYV5/j4OM7Pzxfip7BW3AszxhhjjFnVKW57zcdPRMTfao/w8ZIiq1cAAAAASUVORK5CYII=" InformativeScreenshot="10c6443a3f003f711b149b46209332bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Calorie Counter, Diet &amp;amp; Exercise Journal | MyFitnessPal.com' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="484, 304, 624, 56" ElementType="InputBox" FriendlyName="'​avocado'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='DIV' class='MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart css-1y1z7t5' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data | Food Options" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='foodRow'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='foodRowURL'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='portionRow'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="648,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="3" ScopeIdentifier="50e924de-3f78-4ce5-a2fd-fa002198a81b" Version="V1">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="484, 376, 624, 1151" FriendlyName="'Avocado1 fruitCalories:'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="48efb684-a88c-423a-80ae-be2658fd99b7" InformativeScreenshot="ccc7ce38fa989bde4d0f7dac98a35ebb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Calorie Counter, Diet &amp;amp; Exercise Journal | MyFitnessPal.com' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in ExtractDataTable" sap:VirtualizedContainerService.HintSize="648,640" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480,524" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <AddToCollection x:TypeArguments="x:String" Collection="[list_Food]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[row(2).ToString]" />
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,368" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                            <TryCatch.Try>
+                              <maes:AddToDictionary x:TypeArguments="x:String, x:String" Dictionary="[dict_Food]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="398,141" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="[row(2).ToString]" Value="[row(1).ToString]" />
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                  <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog | Portion" sap:VirtualizedContainerService.HintSize="648,291" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Portion" Options="[list_Food.ToArray]" Title="How much?">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:String">[Portion]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <uix:NGoToUrl DisplayName="Go To The Specific URL" sap:VirtualizedContainerService.HintSize="648,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[dict_Food(Portion).ToString]" Version="V1" />
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ElementsDataTable]" DisplayName="Extract Table Data | Nutritional Info" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='section' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="648,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="50e924de-3f78-4ce5-a2fd-fa002198a81b" Version="V1">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="464, 555, 660, 372" FriendlyName="'Carbs18 gDietary'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" Guid="e0ffe2b8-2225-4c76-ac14-e08a354251d5" InformativeScreenshot="884b1e2e7cf798e49171a5b679eb3222.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pasta - Cooked Pasta calories, carbs &amp;amp; nutrition facts | MyFitnessPal' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="698,2460" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+                    <ueab:SequenceX.Variables>
+                      <Variable x:TypeArguments="x:Int32" Name="RowNumber" />
+                    </ueab:SequenceX.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="636,2346" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="ExcelResultFile">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,2080" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:FindFirstLastDataRowX FirstRowIndex="{x:Null}" BlankRowsToSkip="1" ColumnName="A" ConfigureLastRowAs="FirstEmptyRow" DisplayName="Find First/Last Data Row" FirstRowOffset="0" HasHeaders="False" sap:VirtualizedContainerService.HintSize="560,302" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_1" LastRowIndex="[RowNumber]" LastRowOffset="0" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A&quot;+(RowNumber+1).ToString)]" DisplayName="Write Cell | Food" sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[Food]" />
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ElementsDataTable]" DisplayName="For Each Row in ElementsDataTable" sap:VirtualizedContainerService.HintSize="560,1447" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1331" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="Contains" />
+                                      <Variable x:TypeArguments="x:String" Name="Quantity" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:MultipleAssign DisplayName="Multiple Assign | Element | Contains | Quantity" sap:VirtualizedContainerService.HintSize="484,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                      <ui:MultipleAssign.AssignOperations>
+                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[Element]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[row(0).ToString.Split({vbLf},stringsplitoptions.None)(0)]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[Contains]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[(row(0).ToString.Split({vbLf},stringsplitoptions.None)(1)).Split(" "c)(0).ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[Quantity]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[(row(0).ToString.Split({vbLf},stringsplitoptions.None)(1)).Split(" "c)(1).ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                        </scg:List>
+                                      </ui:MultipleAssign.AssignOperations>
+                                    </ui:MultipleAssign>
+                                    <If Condition="[Quantity=&quot;mg&quot;]" DisplayName=" If | Quantity In mg" sap:VirtualizedContainerService.HintSize="484,444" sap2010:WorkflowViewState.IdRef="If_2">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign DisplayName="Assign | Right Number Format" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[Contains]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[(CInt(Contains.Split(" "c)(0).ToString)/1000).ToString]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign DisplayName="Assign | Grams" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[Quantity]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">g</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A&quot;+(RowNumber+2).ToString)]" DisplayName="Write Cell | Elemen" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[Element]" />
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B&quot;+(RowNumber+2).ToString)]" DisplayName="Write Cell | Contains" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[Contains]" />
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C&quot;+(RowNumber+2).ToString)]" DisplayName="Write Cell | Quantity" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Quantity]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </ueab:SequenceX>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="34ed5121cd4dbb3e14dd7e8376504c66.png" Selector="&lt;html app='chrome.exe' title='Free Calorie Counter, Diet &amp;amp; Exercise Journal | MyFitnessPal.com' /&gt;" Url="https://www.myfitnesspal.com/food/search" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog | Next Food" sap:VirtualizedContainerService.HintSize="774,291" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Add more food?" OptionsString="Yes;No" Title="Add more food?">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[AddNextFood]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="AddNextFood&lt;&gt;&quot;No&quot;" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="852,1489" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="ExcelResultFile.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="560,1223" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="LastRow" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ElementsDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,339" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <If Condition="[(row(0).ToString.Split({vbLf},stringsplitoptions.None)(1)).Split(&quot; &quot;c)(1).ToString=&quot;%&quot;]" sap:VirtualizedContainerService.HintSize="484,224" sap2010:WorkflowViewState.IdRef="If_7">
+                    <If.Then>
+                      <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_5" />
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell | Element" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="WriteCellX_15" Value="[row(0).ToString.Split({vbLf},stringsplitoptions.None)(0)]" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell | Total" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="WriteCellX_16" Value="[&quot;=SUMIF(A:A,&quot;&quot;&quot;+row(0).ToString.Split({vbLf},stringsplitoptions.None)(0)+&quot;&quot;&quot;,B:B)&quot;]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ueab:FindFirstLastDataRowX FirstRowIndex="{x:Null}" BlankRowsToSkip="1" ColumnName="E" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Find First/Last Data Row" FirstRowOffset="0" HasHeaders="False" sap:VirtualizedContainerService.HintSize="518,302" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_3" LastRowIndex="[LastRow]" LastRowOffset="0" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+            <ueab:InsertExcelChartX InsertedChart="{x:Null}" ChartCategory="Pie" ChartHeight="211" ChartType="xlPie" ChartWidth="355" DisplayName="Insert Chart" sap:VirtualizedContainerService.HintSize="518,233" sap2010:WorkflowViewState.IdRef="InsertExcelChartX_3" InsertIntoSheet="[Excel.Sheet(&quot;Sheet1&quot;)]" Left="60" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;E1&quot;+&quot;:F&quot;+LastRow.ToString)]" Top="20" />
+            <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="518,137" sap2010:WorkflowViewState.IdRef="FormatRangeX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
+              <ueab:FormatRangeX.Alignment>
+                <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+              </ueab:FormatRangeX.Alignment>
+              <ueab:FormatRangeX.Font>
+                <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" />
+              </ueab:FormatRangeX.Font>
+              <ueab:FormatRangeX.Format>
+                <ueab:GeneralFormat />
+              </ueab:FormatRangeX.Format>
+            </ueab:FormatRangeX>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1014,2675" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.Activities.Extensions.Statements</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities.Extensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="652,2610" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="UserInput" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="Recipes" />
+      <Variable x:TypeArguments="x:String" Name="Choice" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ChoosenRecipe" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="scg:Dictionary(x:Object, x:Object)" Default="[new Dictionary(of object, object)]" Name="RecipeDictionary" />
+      <Variable x:TypeArguments="x:String" Name="URL" />
+      <Variable x:TypeArguments="x:String" Name="Ingredients" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input User Dialog" sap:VirtualizedContainerService.HintSize="590,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="What would you like to cook?" Title="Cooking ideas">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[UserInput]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Firefox: BBC Good Food" sap:VirtualizedContainerService.HintSize="590,1225" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="6878c7fe-ab78-4227-bfaa-735fa72a118e" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,1008" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into | Dish" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="6878c7fe-ab78-4227-bfaa-735fa72a118e" Text="[UserInput + &quot;[k(enter)]&quot;]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bbcgoodfood.com/" DesignTimeRectangle="1172, 283, 305, 56" ElementType="InputBox" FriendlyName="'INPUT branded-section-s…'" FullSelectorArgument="&lt;webctrl tag='INPUT' id='branded-section-search-input' aaname='Search' /&gt;" FuzzyAccuracy="0.67" FuzzySelectorArgument="&lt;webctrl tag='INPUT' id='branded-section-search-input' aaname='Search' type='' class='form-input form-input-group__input form-input-group__item form-input--borderless form-input--mobile-square-borders' /&gt;" Guid="de619a97-234c-4622-aa58-bba4e8fd3770" ImageBase64="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" InformativeScreenshot="8477328ea896837ed0400ab5873a943a.png" ScopeSelectorArgument="&lt;html app='firefox.exe'  htmlwindowname='*' title='BBC Good Food | Recipes and cooking tips - BBC Good Food' /&gt;" SearchSteps="Selector" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="494,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="5" ScopeIdentifier="6878c7fe-ab78-4227-bfaa-735fa72a118e" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="236, -118, 1470, 9981" FriendlyName="'Your search'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="b92ef074-bc50-4e74-906a-e5da34c0d60e" InformativeScreenshot="70616c8fc83aec8ccb5445817154df93.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='BBC Good Food' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in ExtractDataTable" sap:VirtualizedContainerService.HintSize="494,439" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="460,322" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <AddToCollection x:TypeArguments="x:String" Collection="[Recipes]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="398,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[row(0).ToString]" />
+                    <maes:AddToDictionary x:TypeArguments="x:Object, x:Object" Dictionary="[RecipeDictionary]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="398,142" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="[row(&quot;Name&quot;).ToString]" Value="[row(&quot;Url&quot;).ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Firefox" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAACXBIWXMAAAsSAAALEgHS3X78AAACB1BMVEVHcEwJXFwLXl4MX18MX18MX18LXl4LX18LX18LX18JXFwMX18MX18MX18MX18LXl4LXl4MX18MX18NYGALX18LXl4MX18MXl4LX18NX18LX18MX18MX18MX18MX18MX18NYGAMX18MX18MX18LXl4MX18MX18MX18MX18LXl4MX18MX18LX18MX18MX18MX18LXl4MYGAMX18MXl4MYGAKXl4LX18MXl4MXl4MX18LX18MX18PY2MMX18LXl4NYGAMX18MX18LXl4MX18MX18MX18MX18MX18MX18MXl4MX18MXl4MX18MX18NX18MXl4MX18MX18MX18LX18MX18MX18MX18MX18MX18MX18MX18MX18LX18MX18MYGANYGAMX18MX18MX18MX18MX18MX18MX18PYGAMX18MX18MX18MYGAMYGAMX18MX18NYGAMX18MX18MX18NYGAMX18NX18MX18NYGAXamoMX18MX18MX18LX18MX18MX18MXl4LX18MX18MX18MX18NYWEMX18LX18MX18MX18MX18MXl4MXl4OZmYMYWEMX18MX18MX18NX18NX18MX18MX18KXl4NX18MX18LXl4OYWEMYGAjeHgMX18MX18MXl4MXl4MX18MYGAMZGQMX18MYmIMY2MMYWEMZWUNZ2cMZmYNZmYNamoNaGhGxSWiAAAAoXRSTlMAAf4E3pQDAwECAvr7+Pn8BPX8Bfb7epW1FrHyV7qEKh9Cvf39NvDxfPm34d3Nceb4M6OUGgT+eLZV+lgIv7kY0zz6yUvHxGtdyIxMirMRuGjt2NXlRG6d2aIQMH2CJBfv6HeOEDuwDqwhXikLwUgmHDRPOHUnxR0BL4lfQNFbW/npmaYdvvxSBmf26QYUu87XSkj02gMyzN4KWgGXn99RrhAIPccAAAKtSURBVDjLdVMHVxNBEJ5cMJdeCSSQ0EsABUSkivQmvff+aHbsir33rtj1blsC/kh3L/Dggdzdu5uZ/Wbmm29vAfa5jOboZ791E8Dy75MDW55Bx98GvdPp1OsN0fXiBdufibmh0e1i28XFMxWzMQsw31Ok+ZntaX29V+JL4+LiSifKeUQHS+Ffi7Aapj3c8wxRhimmaoRFGNlIA9kEK4gEAX6yQsRL+sIOL1GQKt31VmTQv8c5GRhXyQhAADPeonm9EJXcuLiSn624lWlf4wSYdLCAyQ8wwOdUzv4QzlEvCXIN1EH7j0WJrlH1AMiaCOdjkZLlB71shlvYi2/CUREdVtQjIINJBriMMmieyDNDULWpF0RYZzooAB5t/qu8wvQrzvwTb1aHB0AvohwwtynLtRqcQ7qFVYsyUHYxQEt9WZBn5flym1KF5LPrFsWWP7kcKKDPI0WcQvLtJ+UvFNzVFriTImT0NGGrRGITCSpkBdVgNG62OLEpuwwpHxRCMaaErU2Kkka9yRmjqPHwNDrny+M4tqNvpr936Zu2y1oiB3Ados54WEpchO/CM3vgP4BGbKGtLWPFnV+FZ9gLeM04R1Wxz7x9dH+1E3R7AGM2lG59LCEFE1XtCYB5NyCEJIQsVqvFLjkqKK7VBtkBqIwg5LIwQlSWaEM2NrIb8IbaSWtye1V9bv7KPWrFZ3ZzsCE3rok2q3YhKykTNHcCCpR05D6smc+Iw8KSxKQ7AfHMnk5j2vyj/m6X4kYlp/jOG51fhNQeTekUF7W7KcnK47tlcYRD0bxhRNq3zslZO1O8ORKS6pCKkziDqcz5QYWFP77LvH5aO2TnHmRjlTEVu3JTgf9QlVUJab6OhK5gQkeymJmX9L8fDIWaGx5qu7n3PJtMW5ZOs4wyvwz8lgWdf42NyJNXfuV8AAAAAElFTkSuQmCC" InformativeScreenshot="0302a0cee457baa1b114724975a8f542.png" Selector="&lt;html app='firefox.exe' title='BBC Good Food' /&gt;" Url="https://www.bbcgoodfood.com" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog | Choose Recipe" sap:VirtualizedContainerService.HintSize="590,292" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Which recipe do you want to try?" Options="[Recipes.ToArray]" Title="Choose the recipe.">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Choice]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign DisplayName="Assign URL" sap:VirtualizedContainerService.HintSize="590,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[URL]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[RecipeDictionary(Choice).ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser | Specific URL" sap:VirtualizedContainerService.HintSize="590,374" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Background" ScopeGuid="c58bb579-d531-4453-83be-e56fc9ae9fda" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <uix:NGetText DisplayName="Get Text | Ingredients" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c58bb579-d531-4453-83be-e56fc9ae9fda" Version="V1">
+            <uix:NGetText.Target>
+              <uix:TargetAnchorable BrowserURL="https://www.bbcgoodfood.com/recipes/artichoke-focaccia" DesignTimeRectangle="359, 464, 400, 1624" FriendlyName="'IngredientsFor the'" FullSelectorArgument="&lt;webctrl tag='SECTION' parentclass='row recipe__instructions' idx='1' /&gt;" FuzzyAccuracy="0.64" FuzzySelectorArgument="&lt;webctrl tag='SECTION' parentclass='row recipe__instructions' type='' class='recipe__ingredients col-12 mt-md col-lg-6' aaname='' /&gt;" Guid="39d49ee8-9ae0-4054-bc26-a03435178651" ImageBase64="" InformativeScreenshot="00c5d78a71ae163f7d3a53faec6ab3ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='18059557' title='Artichoke focaccia recipe | BBC Good Food' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+            </uix:NGetText.Target>
+            <uix:NGetText.Text>
+              <OutArgument x:TypeArguments="x:String">[Ingredients]</OutArgument>
+            </uix:NGetText.Text>
+          </uix:NGetText>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAU+SURBVFhHtZdfiFVVFMbnj0k5c0eDyBiSkKLIl6QignwICYociAIZSTvnXEdnhhEkH8Ih8kV6SaKnInqQoKAnCUUynTAJDBMsCIkyaGIeHPJBzKGRmTu3uf2+tdc+99wzDsxM9fDdte/aa6397bX2v9P2/Ot9/yu60rT9rl27OhbrW6D8L8EA+cDdabqxO0leRibguahvcRDk1JUknbBub9Gjw3EVMof+u66zaGv2Pnh3lvVicxzMgM/BYfAeOArWFR0WTdVSIP9yu5Jl6xlkvDIy0kAejP20nwHXwacLnFE+BY6As+h/Qv4CviV9H4BR2m/mCP81o+3FODF76I9VhoYa2P2+Nst6XJearloVqetFtnegOGode/c2unfvDkZR7tnT6B4cDH1RDgw0fHZnnUAnCKlP0yeB2SDHpHP9x/KlbCpJw5Tu/IWY0VEHc+aYZXK2wdHNYzOrPmQN+beIVYaH1XfGYvg68XiHjHQg8Ekch3a/TUoTiCWgsa/CrAhgrHCeR75DVp5GaiYHwE0nVHd5Q6SRF8BhH7SjkP7jNlAg8KH1+2KtpOnj6LbKNhL4XsYYzBrrNH1D+iLQbdOMsalbSdL06tqBgTvLdhH0X8pLl6bvSwdBlShfb4IM70d5CxlT/icM7/Ugq+QUdwf/f3SicybT9Fnp17AlY8AIbK9YPBFIkpyAy47YVjoe0eAEtZrSnijPrEBgzGc04/Il6YuBlVYf4LcyAS30GCtCyg0YFzNwAyL3eEBb1czQBqAvlqpm9fUTDbkgAy0EOHjK/RFt60dG2jG4nK+BsGiGy4botoCQKZENi7K30P8auMhsTyHHSpOa4L8W7JfgPNgqH00uOh/ULkDW3EG74QDth5AbQT+YtBIlyS07B9hC8o315/8msBO8ArZjd81iKVNJchr0oe9H7iTrDziBsAv8EDrvaZ1jlvPKhM9iyrOi2c/4/p3E574YRFC7CHTFErx7m37zUSPsTVhh+Jc5aUDNVoQEtaULg19SZjxIvqAUkD7tGl1muqTGcwIc47JBt1rjyTb62U/P4OBqnM7YOgizPonUPfAHuAp0Hxwj4KvRUQPFdhkaAPsmgcI5ULaNDof8GNYJOBUvjgdHR5XeFidtI5WsqCtj2QQwuOD1r/lC+462VvVmgvRyVtzdU62uKTtDeEFA06+AwFde33wBmqMCcAEBleJn8DX4CKQiJV8dPMWAwkoIbAZ2EQHtc914uhVVkkBEGYrEQlA9KPrlXz7dVkLgLRDXgByEGphzqK2reB7UCRRKFcq2RTHQlXfE0gjQucMPlohpULOSaMZx1qFEUyBmKp4Jdtf/GwI/2GxUaw0WFqBONT3LzoGLQEeo3gR6G1xze7sRkd+Ugy6XQJxR3QNeLhtF6PSjXxkKBALhU+orLsblEpg0w7D4ApEse6JsKNA3pEG1DmiHMqXp2+pDlwdfHgG9dkMgbbf4JhhH36eHCe11LofBtJMVgfB0y7JHY3Cgd0A7ZPSt0CTgR7EOMPW3EPA7YDpfBwquttLL6whMgPxCAnqQ1u1pze6JgxeDCvRdMfvgd6TcH2E/GLwAZi0TsGYAHUi27RREEmgrhhmFtWKpj7VnIvoI0TeFPjr22+yJ50R/JYsvev9j9HXlBJQ2D/AwnZ+BmzaABhIhoTmoFqB2hD0oBNrxPbADnCPeCaQ+avQA0aV2ghKcpq1HivpOgk3y0dgWhEaeQtUbKCP7gQ4oYR/YVqlWN0Q7ORfaC47jpSJvKGAx6GJQym9nJxJAC7EJdkaLdDT9+tr+ARU6DnrWFGUTAAAAAElFTkSuQmCC" InformativeScreenshot="0179e6998cf925388b035d761a0efa68.png" Selector="&lt;html app='chrome.exe' htmlwindowname='18059557' title='Artichoke focaccia recipe | BBC Good Food' /&gt;" Url="[URL]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="589.333333333333,86.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;You will need these ingredients: &quot; + vbcrlf + Ingredients]" />
+  </Sequence>
+</Activity>

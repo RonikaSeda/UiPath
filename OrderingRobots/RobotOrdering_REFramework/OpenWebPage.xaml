@@ -1,0 +1,131 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenWebPage" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="862.4,919.2" sap2010:WorkflowViewState.IdRef="OpenWebPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="56">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="OpenWebPage" sap:VirtualizedContainerService.HintSize="496,854.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+      <Variable x:TypeArguments="x:String" Name="Username" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Opening RobotSpareBin Industries page.&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: RobotSpareBin Industries Inc. - Intranet" sap:VirtualizedContainerService.HintSize="433.6,588.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="acd2ce92-e852-4f4c-949b-186f55273138" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,362.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="337.6,32" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'Yep'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="acd2ce92-e852-4f4c-949b-186f55273138" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://robotsparebinindustries.com/#/robot-order" DesignTimeRectangle="754, 323, 71, 48" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Yep'" FullSelectorArgument="&lt;webctrl aaname='Yep' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yep' tag='BUTTON' type='button' class='btn btn-warning' check:innerText='Yep' /&gt;" Guid="e7d388d9-42f3-40a9-a490-e4037191ffb6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAA0CAYAAADCOsX+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAO3SURBVGhD7ZtbSFRBGMd7c13Ne941L7u6WVGEldnFMivB7IIPhiRBFmhRYkVZWXSPLtpDpRBkpUVmSaWpZBc1euilIAqCgiCEiooiyijRvvY/cuzsnll1bFc2dx5+IGdmzjq/858zn7gzqnhZF0kGh5QlgJQlgEZWTfFF6riSTD2tHkTtbi4H5o35w4O1GwtZD8q20LfmcO5NXA14gA+1nz5ZMClFWQIf6oT1yUL0eANcHXjRyHLVd9RAwItGFq+jpBcpSwApSwApSwApSwApSwApSwApSwApSwApSwApSwC7y3pzzZMWpsTSgfWh1N2q4/Z5f1NPSxbE0M41YfTrHr+PM2J3Wb/b3KiiOIhmJRnpVY0nt0/1njE0eVI8PTnnxW13VuwuCyjpKi0K1qTrQ72esjOiaV+B7eQ5Kw6RhXSd3x3ITVftwQBKmhpHz6q0qeps0VGVOXVZ6dFkNJko2jiOpiXG0Y68MPYArPs/OuNNyxfF0NvrHnT/pC/lZ0eyxGJc6iwD1R0OsOsDcYgsgAksnh9jka4vTe6UkxnFTVVnizttXhXO5JzYFEzt5T70sMKHzpYE0tyZBpZUa2GQBakJ402UPi+WyrcFsXEQV5QbwdoaS/0sxvwLDpPFS1f9MX+WqheXRmv6t532Zal4XOmtaUMKMQ6pVF+HrAkT46m5zI96zJ+nblMezPa8cOqy0ybiMFlA2fVObQ2iz4169svb2iWRwNylUfS12V3ThrFYbkc2hlhchyxbGwkEQZStew4Fh8oC2PmwhLCcUpIN3In9uKOjwpURVLAiki1fyFHzutaTMtPEZAH0h2Tcg9cuisNlKbsfXrq83REostCnP0a8LFC5K5ASp8TR82p+XTVQshS+37ZcTiNSFl7M/U3q510d2wk35ESw8oHXh4dLygKYWEZqLL27Mfh/xfUnS0krwM/W7UPBaWQ1mbd/1EVXDwWwssO6vbu1F/U1yEqebqSXl7WlCGoyFKZHC0O49xsKTiPr063e0sKUYKK9+aGssERR2nDcn0rWhrE6C7WYegxk4cWP+gxFKPoqY3Ave//96TSywMcGPZWZd8y02Ya+HRATxm6K6ryjznKJKslCsbt/XSjNmWFkYyB8ddZYenrBy26pAsMiy1EM9IK3N1KWAFKWAFKWAFKWAP+1rOFGyhJAyhJAyhJAyhJAyhJAyhJAI0t+tZsP96vd8tAAH+6hAXkcRYvN4yhAHnT6CzzYPOikAJOInqu+wzBvzF+dKAWNLIktuugPKyKJV9w1zhUAAAAASUVORK5CYII=" InformativeScreenshot="05b7319881b6ff7812e9959503823bd2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RobotSpareBin Industries Inc. - Intranet' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="059ec9ac9fd53e243885c027e67526e8.jpg" Selector="&lt;html app='chrome.exe' title='RobotSpareBin Industries Inc. - Intranet' /&gt;" Url="https://robotsparebinindustries.com/#/robot-order" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

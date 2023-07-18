@@ -1,0 +1,228 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StopwatchWorkflow" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="932.8,1449.6" sap2010:WorkflowViewState.IdRef="StopwatchWorkflow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>AttendedRobotStatus.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>AttendedRobotStatus</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="943.2,1384.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:Stopwatch" Name="StopwatchVariable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box | Instructions" sap:VirtualizedContainerService.HintSize="901.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Press 'Alt+Enter' for start/pause stopwatch.&quot;+vbcrlf+&quot;Or use 'Alt+Esc' hotkey for stop time counting.&quot;]" />
+    <Assign DisplayName="Assign | New Stopwatch Variable" sap:VirtualizedContainerService.HintSize="901.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:Stopwatch">[StopwatchVariable]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:Stopwatch">[new Stopwatch()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Parallel sap:VirtualizedContainerService.HintSize="901.6,1066.4" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While | For Repetition" sap:VirtualizedContainerService.HintSize="528,1020" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+        <ui:InterruptibleWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="492.8,852.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TriggerScope DisplayName="Trigger Scope | Start" sap:VirtualizedContainerService.HintSize="451.2,52.8" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="OneTime">
+              <ui:TriggerScope.Action>
+                <ActivityAction x:TypeArguments="ui:EventInfoTriggerArgs">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:EventInfoTriggerArgs" Name="args" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="324.8,347.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <InvokeMethod DisplayName="Invoke method | Start" sap:VirtualizedContainerService.HintSize="283.2,133.6" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Start">
+                      <InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="sd:Stopwatch">[StopwatchVariable]</InArgument>
+                      </InvokeMethod.TargetObject>
+                    </InvokeMethod>
+                    <aa:AttendedRobotStatus DisplayName="Attended Robot Status | Start" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="283.2,80.8" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="Stopwatch is running" WarnLvl="True" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:TriggerScope.Action>
+              <ui:TriggerScope.Triggers>
+                <scg:List x:TypeArguments="Activity" Capacity="4">
+                  <ui:HotkeyTriggerV2 BlockEvent="False" DisplayName="Hotkey Trigger | Start" sap:VirtualizedContainerService.HintSize="416,85.6" sap2010:WorkflowViewState.IdRef="HotkeyTriggerV2_1" Key="enter" KeyModifiers="Alt" UseWindowsHotKey="False" />
+                </scg:List>
+              </ui:TriggerScope.Triggers>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:TriggerScope>
+            <ui:TriggerScope DisplayName="Trigger Scope | Pause" sap:VirtualizedContainerService.HintSize="451.2,667.2" sap2010:WorkflowViewState.IdRef="TriggerScope_2" SchedulingMode="OneTime">
+              <ui:TriggerScope.Action>
+                <ActivityAction x:TypeArguments="ui:EventInfoTriggerArgs">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:EventInfoTriggerArgs" Name="args" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="375.2,348.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <InvokeMethod DisplayName="Invoke method | Stop" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Stop">
+                      <InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="sd:Stopwatch">[StopwatchVariable]</InArgument>
+                      </InvokeMethod.TargetObject>
+                    </InvokeMethod>
+                    <aa:AttendedRobotStatus DisplayName="Attended Robot Status | Pause" ErrorLvl="True" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_2" InfoLvl="False" Message="[&quot;Stopwatch paused&quot; + vbcrlf + TimeSpan.FromSeconds(StopwatchVariable.Elapsed.TotalSeconds).ToString]" WarnLvl="False" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:TriggerScope.Action>
+              <ui:TriggerScope.Triggers>
+                <scg:List x:TypeArguments="Activity" Capacity="4">
+                  <ui:HotkeyTriggerV2 BlockEvent="False" DisplayName="Hotkey Trigger | Stop" sap:VirtualizedContainerService.HintSize="416,85.6" sap2010:WorkflowViewState.IdRef="HotkeyTriggerV2_2" Key="enter" KeyModifiers="Alt" UseWindowsHotKey="False" />
+                </scg:List>
+              </ui:TriggerScope.Triggers>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:TriggerScope>
+          </Sequence>
+        </ui:InterruptibleWhile.Body>
+        <ui:InterruptibleWhile.Condition>
+          <Literal x:TypeArguments="x:Boolean" Value="True" />
+        </ui:InterruptibleWhile.Condition>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InterruptibleWhile>
+      <ui:TriggerScope DisplayName="Trigger Scope | Break" sap:VirtualizedContainerService.HintSize="200,1020" sap2010:WorkflowViewState.IdRef="TriggerScope_3" SchedulingMode="OneTime">
+        <ui:TriggerScope.Action>
+          <ActivityAction x:TypeArguments="ui:EventInfoTriggerArgs">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:EventInfoTriggerArgs" Name="args" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="375.2,516" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Double" Name="Duration" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Double">[Duration]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Double">[StopwatchVariable.Elapsed.TotalSeconds]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="TimeSpan.FromSeconds(Duration).ToString&#xD;&#xA;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,136.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[TimeSpan.FromSeconds(cdbl(Duration.ToString))]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <TerminateWorkflow sap2010:Annotation.AnnotationText="&quot;Duration &quot;+StopwatchVariable.Elapsed.TotalMinutes.ToString&#xD;&#xA;&#xD;&#xA;&quot;Duration: &quot; + TimeSpan.FromSeconds(Duration).ToString" DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_3" Reason="[&quot;Duration: &quot; + TimeSpan.FromSeconds(CDbl(Duration)).ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </TerminateWorkflow>
+            </Sequence>
+          </ActivityAction>
+        </ui:TriggerScope.Action>
+        <ui:TriggerScope.Triggers>
+          <scg:List x:TypeArguments="Activity" Capacity="4">
+            <ui:HotkeyTriggerV2 BlockEvent="False" DisplayName="Hotkey Trigger | Stop" sap:VirtualizedContainerService.HintSize="416,85.6" sap2010:WorkflowViewState.IdRef="HotkeyTriggerV2_3" Key="esc" KeyModifiers="Alt" UseWindowsHotKey="False" />
+          </scg:List>
+        </ui:TriggerScope.Triggers>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:TriggerScope>
+    </Parallel>
+  </Sequence>
+</Activity>

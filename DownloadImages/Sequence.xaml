@@ -1,0 +1,229 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1296,2947" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="37">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1306,2882" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Topic" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1244,243" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Type here a topic of your images" Title="Topic">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Topic]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser | Unsplash Webpage" sap:VirtualizedContainerService.HintSize="1244,2488" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b32c1d96-a562-47d3-8053-a8b2596b65f9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1210,2270" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Get Images URL" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='picture' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='0' name='Column0' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='figure' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="1148,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="50" ScopeIdentifier="b32c1d96-a562-47d3-8053-a8b2596b65f9" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="148, -1967, 1620, 9928" DesignTimeScaleFactor="1.25" FriendlyName="'SponsoredA heartA'" FullSelectorArgument="&lt;webctrl class='mItv1' parentid='app' tag='DIV' /&gt;" Guid="62beb1eb-797b-4b98-b115-ee52effeb340" InformativeScreenshot="efd0e29f0a99c4c559578d1e82000e3e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best 500+ Adventure Pictures | Download Free Images on Unsplash' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1148,1957" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1114,1839" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1052,94" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[row(0).ToString]" />
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1052,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[row(0).ToString]" Version="V3" />
+                    <uix:NCheckState DisplayName="Check App State 'Download free' button exists" sap:VirtualizedContainerService.HintSize="1052,1467" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b32c1d96-a562-47d3-8053-a8b2596b65f9" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="548,1248" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="si:FileInfo" Name="DownloadedFile" />
+                            <Variable x:TypeArguments="x:String" Name="PathToDownloadedFolder" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[PATH TO DOWNLOAD FILE]" File="[DownloadedFile]" sap:VirtualizedContainerService.HintSize="486,529" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp, dwn, crdownload">
+                            <ui:GetLastDownloadedFile.Body>
+                              <ActivityAction>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ClickType="Single" DisplayName="Click 'Download free'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b32c1d96-a562-47d3-8053-a8b2596b65f9" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://unsplash.com/photos/UVyOfX3v0Ls" DesignTimeRectangle="1717, 234, 113, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Download free'" FullSelectorArgument="&lt;webctrl aaname='Download free' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Download free' tag='SPAN' type='' class='wl5gA' check:innerText='Download free' /&gt;" Guid="3a2b04b2-f9d1-41e1-bf07-f95da80757dd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAqCAYAAACN3BSeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVkSURBVHhe7VhBbxo7EO4P42/kB+QPcMvpnbhVOeTEIeqNSzlUVQ7JJRxIlAOJVHghSogEEoEG3r5V3qIGtqJZIjJvxh7vrpcVWWhoK8uWPrHrHY/H843HY96BbcY1S6qB7V3uKA8WZsGSaiAsqQbCkmogLKkGwpJqICypBsKSaiAsqQbCkmogLKkGwpJqICJSW23w+Q/hhTafQt87g70TffDvRtGbonEuHKZ82xzOoY+z+t5ByjeFAhRdD/wX4T2AWRs+pMptBoukPo+hP3Ej+GPw58I0gKAH5S+6gt+JP5bUkzo45K+ZC7VhHSr9A8inyW0Ii6T65wtCuaNd+CAciLxOzn+pgcvwx5LKvly+mzeHjKQSPkLtiQTGULuM+rf+rkLNn0KgUg2l6ocq7IjvJTkG008x1JOHgjsWov5/n8K+UHbahPy9Sw/Q6FahMZXBRC0IXKhcF8IxaaQut0dhH8oPbpSBqKGc46XIebE0Ggzg85flpEqb9Na/P4DGDB/8JhxO6AHbHNdSl2O2b+rQD7gfG62z1t1P6C5A4a4NTiQG/o+B5g+FFUjNQ97xhDJnyIpogcIx5JAmVIYt6DzJWQPUQw6Si4wHQgEOxUTYiEDWnbtswQi7Rm4JcoJU1IG6g6eBSGG1xzEE1PncC8+nBVIz2EPzl77JPt9vwymlx4de6KyR+1HqQrnymMdOeyjXhAYGC74s3YX52zPU5wpbA7+FNtShdMWkUhMpGXV55/Ce5L9KWepvOGiL04a+kJ1hMETEFh/kRlD+qDwMYMRrbdzqxK5Eau5uQBK8oAJ8FvMkle5C+ZGsmsF1G987PWF0/17JVKGDkR/MUeZlAGUeJwMGyb/CdyYVvte1nSNJxPla8XdFakZ7js7g+pkcnjhGLvgcVOu/kkEWBQMBCyDeiaulX0XqGE61muRI2ELBXdCK0H04pWlUALNtwWMVtkMZxMmxHI9+iq9lNVI1YyU52m5TUA75dhzJjavym9CBjsdIiwji3avSNJMaZgQF7u/fy3ed1Kz2JL6FYMfzeBlkGAidhNxFUzh4LVITx1DuluUmlFVw98VQ84Uxwj9bQ86QI12GcC2ORP0IWo1UTBVCRBgrz5Z0R8lvUhcThlFXwm/CWbRDuUJ0nCLK8O5VuhLkhVhKalZ7uO+kCH/dHMMhpcJHF0ZiJ2Fjx0vdHpxexPUQpK1vQqrKSEta/6uyZVlD8m8ivSuRqgocmUqzO1FGvYy6wwk+YrrYUoURVtMqRXfuePxGSZV3SHGOUXuZQfCMZ/DjABxKZa+SKlPeW5K6sM4EpC0qq72OFUhV1a8HFbHQ19NduCgughxHnmeiGMJ+UbDgQitkdOx8XY/UjPbwM8kVz+Ppnc8ndvwvSb8czOmBGEHaorJaukwcGUmN3VPxbNwSfa8XJp2u6uNFPY1xjpijRDqnnYI/OK/Ui1iL1Iz2sI7keb3dHXAVyo6/bErytWLtJwulJKmqUHrBjaIVUPtQ+c79dO1RRRyNjxdUJ0qvPNpU/yKpaf8o0Q6gFiSUZrpCSKhrhHao8w6m5vwTi8K1SEVksUft1Be6v1KxwVcV0YcIHR8RGF6rJiyH7W1IzcMOrkkEk7KHrjRsM41XG0jZAnMPrunqE17D9KsPYZHUlBbMkGi8wOtlt0TqZf/fI41QAb4O6emRF5s8u9YlFZHFnp2ufomny/5pp8Q7XR0vhF3YG8b+pCBdGChvln4ZO92W9ueDnOeTfn1BYveGeDeN2z3zoHFXijIcIyLVwhhYUg2EJdVAWFINhCXVQFhSDYQl1UBYUg2EJdVAWFINhCXVQFhSDYQl1UBYUg2EJdU45OF/swSIyUMOA0kAAAAASUVORK5CYII=" InformativeScreenshot="0dab9815822da776e2fee2a341c55f6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='person carrying yellow and black backpack walking between green plants photo – Free Wellness Image on Unsplash' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:GetLastDownloadedFile.Body>
+                          </ui:GetLastDownloadedFile>
+                          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" sap2010:Annotation.AnnotationText="Type here your path to downloaded folder&#xA;" Destination="[PATH TO FINAL FOLDER]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="486,205" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[DownloadedFile.ToString]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:MoveFile>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,319" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Delay sap2010:Annotation.AnnotationText="when needed to have different time stamp on every downloaded file, use delay. But it's not necessary." Duration="00:01:00" sap:VirtualizedContainerService.HintSize="388,129" sap2010:WorkflowViewState.IdRef="Delay_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Delay>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                          </ui:CommentOut>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,209" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Paid picture&quot;]" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://unsplash.com/photos/UVyOfX3v0Ls" DesignTimeRectangle="1717, 234, 113, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Download free'" FullSelectorArgument="&lt;webctrl aaname='Download free' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Download free' tag='SPAN' type='' class='wl5gA' check:innerText='Download free' /&gt;" Guid="6f0098bd-eacc-4fda-a576-30ac1d85ea9c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAqCAYAAACN3BSeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVkSURBVHhe7VhBbxo7EO4P42/kB+QPcMvpnbhVOeTEIeqNSzlUVQ7JJRxIlAOJVHghSogEEoEG3r5V3qIGtqJZIjJvxh7vrpcVWWhoK8uWPrHrHY/H843HY96BbcY1S6qB7V3uKA8WZsGSaiAsqQbCkmogLKkGwpJqICypBsKSaiAsqQbCkmogLKkGwpJqICJSW23w+Q/hhTafQt87g70TffDvRtGbonEuHKZ82xzOoY+z+t5ByjeFAhRdD/wX4T2AWRs+pMptBoukPo+hP3Ej+GPw58I0gKAH5S+6gt+JP5bUkzo45K+ZC7VhHSr9A8inyW0Ii6T65wtCuaNd+CAciLxOzn+pgcvwx5LKvly+mzeHjKQSPkLtiQTGULuM+rf+rkLNn0KgUg2l6ocq7IjvJTkG008x1JOHgjsWov5/n8K+UHbahPy9Sw/Q6FahMZXBRC0IXKhcF8IxaaQut0dhH8oPbpSBqKGc46XIebE0Ggzg85flpEqb9Na/P4DGDB/8JhxO6AHbHNdSl2O2b+rQD7gfG62z1t1P6C5A4a4NTiQG/o+B5g+FFUjNQ97xhDJnyIpogcIx5JAmVIYt6DzJWQPUQw6Si4wHQgEOxUTYiEDWnbtswQi7Rm4JcoJU1IG6g6eBSGG1xzEE1PncC8+nBVIz2EPzl77JPt9vwymlx4de6KyR+1HqQrnymMdOeyjXhAYGC74s3YX52zPU5wpbA7+FNtShdMWkUhMpGXV55/Ce5L9KWepvOGiL04a+kJ1hMETEFh/kRlD+qDwMYMRrbdzqxK5Eau5uQBK8oAJ8FvMkle5C+ZGsmsF1G987PWF0/17JVKGDkR/MUeZlAGUeJwMGyb/CdyYVvte1nSNJxPla8XdFakZ7js7g+pkcnjhGLvgcVOu/kkEWBQMBCyDeiaulX0XqGE61muRI2ELBXdCK0H04pWlUALNtwWMVtkMZxMmxHI9+iq9lNVI1YyU52m5TUA75dhzJjavym9CBjsdIiwji3avSNJMaZgQF7u/fy3ed1Kz2JL6FYMfzeBlkGAidhNxFUzh4LVITx1DuluUmlFVw98VQ84Uxwj9bQ86QI12GcC2ORP0IWo1UTBVCRBgrz5Z0R8lvUhcThlFXwm/CWbRDuUJ0nCLK8O5VuhLkhVhKalZ7uO+kCH/dHMMhpcJHF0ZiJ2Fjx0vdHpxexPUQpK1vQqrKSEta/6uyZVlD8m8ivSuRqgocmUqzO1FGvYy6wwk+YrrYUoURVtMqRXfuePxGSZV3SHGOUXuZQfCMZ/DjABxKZa+SKlPeW5K6sM4EpC0qq72OFUhV1a8HFbHQ19NduCgughxHnmeiGMJ+UbDgQitkdOx8XY/UjPbwM8kVz+Ppnc8ndvwvSb8czOmBGEHaorJaukwcGUmN3VPxbNwSfa8XJp2u6uNFPY1xjpijRDqnnYI/OK/Ui1iL1Iz2sI7keb3dHXAVyo6/bErytWLtJwulJKmqUHrBjaIVUPtQ+c79dO1RRRyNjxdUJ0qvPNpU/yKpaf8o0Q6gFiSUZrpCSKhrhHao8w6m5vwTi8K1SEVksUft1Be6v1KxwVcV0YcIHR8RGF6rJiyH7W1IzcMOrkkEk7KHrjRsM41XG0jZAnMPrunqE17D9KsPYZHUlBbMkGi8wOtlt0TqZf/fI41QAb4O6emRF5s8u9YlFZHFnp2ufomny/5pp8Q7XR0vhF3YG8b+pCBdGChvln4ZO92W9ueDnOeTfn1BYveGeDeN2z3zoHFXijIcIyLVwhhYUg2EJdVAWFINhCXVQFhSDYQl1UBYUg2EJdVAWFINhCXVQFhSDYQl1UBYUg2EJdU45OF/swSIyUMOA0kAAAAASUVORK5CYII=" InformativeScreenshot="052efccc1b73a775386d3c141895d9c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='person carrying yellow and black backpack walking between green plants photo – Free Wellness Image on Unsplash' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAALhJREFUWEe90zEOwkAQBEH/joTH8P/EQDpXmoVkLVXS0t5Evh6v508+3/0PvSGMkgMTvSGMkgMTvSGMkgMTvSGMkgMTvSGMkgMTvSGMkgMTvSGMkgMTvSGMkgMTvSGMmxg3MW5i3MS4iXHT9+NvlHTc5H3BeNBIk/cF40EjTd4XjAeNNHlfMB400uR9wXjQSJP3BeNBI03eF4wHjTR5XzAeNNLkfcG4iXET4ybGTYybGDcxbmJcct1vSbEDvY5Z+IMAAAAASUVORK5CYII=" InformativeScreenshot="92f5e714b48e2f1d32c7f9a043803b4f.jpg" Selector="&lt;html app='chrome.exe' title='500+ Dog Pictures | Download Free Images on Unsplash' /&gt;" Url="[&quot;https://unsplash.com/s/photos/&quot;+Topic]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
